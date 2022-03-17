@@ -1,11 +1,39 @@
+body {
+  min-height: 100vh !important; 
+  background-color: #8a8888 !important;
+}
+
 #container {
+  position: absolute;
   width: 1110px;
   height: 156px;
   border-radius: 12px;
+  background-color: white;
+
+  #content {
+    margin: 16px;
+    width: 1078px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+  } 
+
+  footer {
+    text-align: center;
+  }
+
+  .ant-progress-circle .ant-progress-text {
+    font-size: 28px;
+  }
 }
 
-#content {
+#games {
+  margin-left: 32px;
   display: flex;
+}
+
+.game-card {
+  margin-left: 24px;
 }
 
 .game-card-image {
@@ -14,20 +42,59 @@
   border-radius: 5px;
 }
 
+#rating {
+  margin-left: 32px;
+  width: 100px;
+  height: 54px;
+
+  .ant-rate-star {
+    margin-right: 2px;
+  }
+}
+
 #logo {
   width: 100px;
   height: 48px;
 }
 
-#games {
-  display: flex;
-}
-
 #player-offer {
+  margin-left: 32px;
+  width: 276px;
+  height: 84px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 #warning {
   display: inline;
+}
+
+#progress {
+  margin-left: 32px;
+  position: relative;
+}
+
+#progress-text {
+  position: absolute;
+  top: 12px;
+  left: 9px;
+}
+
+#get-bonus-block {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bonus-button {
+  border: none;
+  width: 132px;
+  height: 44px;
+  background-color: #C90A0A;
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
