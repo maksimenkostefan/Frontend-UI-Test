@@ -1,0 +1,33 @@
+#container {
+  width: 1110px;
+  height: 156px;
+  border-radius: 12px;
+}
+
+#content {
+  display: flex;
+}
+
+.game-card-image {
+  width: 72px;
+  height: 44px;
+  border-radius: 5px;
+}
+
+#logo {
+  width: 100px;
+  height: 48px;
+}
+
+#games {
+  display: flex;
+}
+
+#player-offer {
+  display: flex;
+  flex-direction: column;
+}
+
+#warning {
+  display: inline;
+}
