@@ -2,8 +2,8 @@ import React from 'react';
 import './styles/root.scss';
 import 'antd/dist/antd.css';
 
-import { Rate } from 'antd';
 import { Progress } from 'antd';
+import { Rate } from 'antd';
 import Text from './components/Text/Text';
 import GameCard from './components/GameCard/GameCard';
 
@@ -15,7 +15,7 @@ function App() {
         <div id="content">
           <img id="logo" src="https://10bestcasinos.co.uk/assets/1592576083431.svg" />
           <div id="player-offer">
-            <Text size={20} height={24} color='#000000' textDecoration='underline'>
+            <Text size={20} height={24} color='#000000'>
               Get 200% Bonus up to <br/>
               $200 + 32 Super Spins 
             </Text>
@@ -41,15 +41,12 @@ function App() {
               Starburst™<br/>Slot 
             </GameCard>
             <GameCard src="https://d14egw19m1ttef.cloudfront.net/s3:thetop10casinoscom/assets/9%20Pots%20of%20Gold.jpg/fit-in/96x0">
-            Book of Dead<br/>Slot Machine 
+              Book of Dead<br/>Slot Machine 
             </GameCard>
           </div>
 
-
-
           <div id="rating">
-            <Rate allowHalf defaultValue={4.5}/>
-
+            <Rate style={{ fontSize: 16 }}/>
             <Text size={12} height={14} color='#A5A5AB'>
               Votes (39,338)
             </Text>
@@ -59,11 +56,13 @@ function App() {
             </Text>
           </div>
 
-          <Progress type="circle" percent={70} strokeColor="#F5A623" format={() => '9.8'} />
+          <div id='progress'>
+            <Progress width={58} type="circle" percent={70} strokeColor="#F5A623" format={() => 9.8} />
+          </div>
 
           <div id="get-bonus-block">
-            <button id="get-bonus-block__bonus-button bonus-button">
-              Get bonus
+            <button id="bonus-button">
+              Get Bonus
             </button>
             <Text size={12} height={14} color='#A5A5AB'>
               Min. Deposit - £10
