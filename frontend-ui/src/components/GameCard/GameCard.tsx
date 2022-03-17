@@ -14,8 +14,8 @@ function GameCard(props: IGameCardProps) {
       <div 
         style={{
           fontSize: '12px',
-          fontWeight: 400,
           lineHeight: '14px',
+          fontWeight: 400,
           color: '#929292',
           textDecoration: 'underline',
         }}
